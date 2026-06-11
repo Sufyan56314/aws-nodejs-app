@@ -1,7 +1,7 @@
 const express = require('express');
 const { asc } = require('drizzle-orm');
 const { getDb } = require('./db');
-const { users } = require('./db/schema');
+const { users  = require('./db/schema');
 
 const app = express();
 
