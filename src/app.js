@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/health', (_request, response) => {
-  response.json({ status: 'ok' });
+  response.json({ status: 'ok' , deployment : 'CI/CD test successful' });
 });
 
 app.get('/api/users', async (_request, response, next) => {
